@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Música</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="capa">
+            <img src="img/CAPA.png" alt="capa" srcset="" id="capaImg">
+        </div>
+        <div class="nomeMusica">
+            <h1 id="trackName">Track Name</h1>
+            <h3 id="autorMusica">by Dudu</h3>
+        </div>
+        <div class="toolBar">
+            <div class="Ant">
+                <img src="img/ANTERIOR.png" alt="ante" id="ante">
+            </div>
+            <div class="PauseOrPlay">
+                <img src="img/PLAY.png" alt="pause" id="pauseOrResume">
+            </div>
+            <div class="Prox">
+                <img src="img/PROXIMO.png" alt="prox" id="prox">
+            </div>
+        </div>
+        <div class="timeLine">
+            <div class="tempoComecou">
+                <span id="tempoComecou">00:00</span>
+            </div>
+            <input type="range" id="timeLine" value="0" min="0" step="0.1"> 
+            <audio src="audio/AUTOMOTIVO TOMA CAVUCADA SLOWED.mp3" id="audio"></audio>
+            <div class="tempoTerminar">
+                <span id="tempoTerminar">00:00</span>
+            </div>
+        </div>
+        <div class="sound">
+            <div class="imageSound">
+                <img src="img/SOM.png" alt="som" id="somImg">
+            </div>
+            <input type="range" id="audioLevel" value="1" min="0" max="1" step="0.01">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

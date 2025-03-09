@@ -1,0 +1,156 @@
+html, body{
+    padding: 20px;
+    gap: 0;
+    background-color: #333;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.capa {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+#capaImg {
+    border-radius: 50px;
+    width: 100%;  
+    height: 100%;  
+}
+
+.nomeMusica{
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#trackName, #autorMusica{
+    color: #fff;
+    line-height: 0.5;    
+}
+
+.toolBar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 25px;
+}
+
+#autorMusica{
+    font-style: italic;
+}
+
+.Ant, .Prox {
+    width: 50px;
+    height: 50px;
+}
+
+#ante, #prox{
+    width: 100%;  
+    height: 100%;  
+}
+
+.PauseOrPlay{
+    width: 140px;
+    height: 140px;
+}
+
+#pauseOrResume{
+    width: 100%;  
+    height: 100%;
+}
+
+.timeLine{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    padding-bottom: 20px;
+    gap: 7px;
+}
+
+#tempoComecou, #tempoTerminar{
+    font-size: 23px;
+}
+
+#timeLine {
+    width: 100%;
+    height: 6px;  
+    appearance: none;
+    background: #000000; 
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+}
+
+#timeLine::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    cursor: grab;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+#timeLine::-webkit-slider-thumb:active {
+    transform: scale(1.2);
+    cursor: grabbing;
+}
+
+#audioLevel {
+    width: 100%;
+    height: 6px;  
+    appearance: none;
+    background: #000000; 
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+}
+
+#audioLevel::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    cursor: grab;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+#audioLevel::-webkit-slider-thumb:active {
+    transform: scale(1.2);
+    cursor: grabbing;
+}
+
+.sound{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.imageSound{
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+#somImg{
+    width: 100%;
+    height: 100%;
+}
