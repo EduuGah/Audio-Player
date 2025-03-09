@@ -18,7 +18,7 @@ let playImg = 'img/PLAY.png'
 
 const audio = document.getElementById('audio')
 
-timeLine.max = audio.duration
+timeLine.max = 120
 
 function formatarTempo(segundos) {
     const minutos = Math.floor(segundos / 60); 
