@@ -8,12 +8,31 @@
 </head>
 <body>
     <div class="container">
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                    <div class="objetos">
+                        <div class="nomeMusica">
+                            <label for="">Nome da música:</label>
+                            <input type="text" name="" id="dadoNomeMusica">
+                        </div>
+                        <br>
+                        <div class="cantor">
+                            <label for="">Cantor:</label>
+                            <input type="text" name="" id="dadoCantorMusica">
+                        </div>
+
+                        <button type="submit" id="enviarDados">Enviar</button>
+                    </div>
+            </div>
+        </div>
         <div class="capa">
             <img src="img/CAPA.png" alt="capa" srcset="" id="capaImg">
         </div>
         <div class="nomeMusica">
             <h1 id="trackName">Track Name</h1>
-            <h3 id="autorMusica">by Dudu</h3>
+            <div class="autorMusica">
+                <h3 id="autorMusica">by Dudu</h3>
+            </div>
         </div>
         <div class="toolBar">
             <div class="Ant">
@@ -30,8 +49,8 @@
             <div class="tempoComecou">
                 <span id="tempoComecou">00:00</span>
             </div>
-            <input type="range" id="timeLine" value="0" min="0" step="0.1"> 
-            <audio src="audio/AUTOMOTIVO TOMA CAVUCADA SLOWED.mp3" id="audio"></audio>
+            <input type="range" id="timeLine" value="0" min="0" step="0.1">
+            <audio src="" id="audio"></audio>
             <div class="tempoTerminar">
                 <span id="tempoTerminar">00:00</span>
             </div>
@@ -41,6 +60,10 @@
                 <img src="img/SOM.png" alt="som" id="somImg">
             </div>
             <input type="range" id="audioLevel" value="1" min="0" max="1" step="0.01">
+        </div>
+        <div class="botaoEnviar">
+            <input type="file" id="audioUpload" accept="audio/*" style="display: none;">
+            <button id="botaoEnviar">Enviar Áudio</button>
         </div>
     </div>
     <script src="script.js"></script>
